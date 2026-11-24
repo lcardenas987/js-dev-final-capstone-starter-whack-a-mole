@@ -1,8 +1,133 @@
+
+# Whack-A-Mole Arcade — Final Capstone
+
+## Project Overview
+
+Whack-A-Mole Arcade is an interactive browser game built
+using HTML, CSS, and JavaScript.
+
+Players click Start Game and try to hit randomly appearing
+moles during a 10-second round. Each successful hit
+increases the score.
+
+## Features
+
+- Nine holes with randomly appearing moles
+- Start Game button
+- 10-second countdown timer
+- Score tracking
+- Random mole selection
+- Custom purple arcade design
+
+## Technologies Used
+
+- HTML5
+- CSS3
+- JavaScript
+- Parcel
+- Jest and Puppeteer
+- GitHub Pages
+
+## Project Links
+
+**Live Game:**
+https://lcardenas987.github.io/js-dev-final-capstone-starter-whack-a-mole/
+
+**GitHub Repository:**
+https://github.com/lcardenas987/js-dev-final-capstone-starter-whack-a-mole/
+
+## Testing
+
+All 32 automated tests passed successfully.
+
+![Passing Tests](src/screenshots/test-passed.png)
+
+## Screenshots
+
+### Game Start
+![Game Start](src/screenshots/game-start.png)
+
+### Game in Progress
+![Game Playing](src/screenshots/game-playing.png)
+
+### Scoring Points
+![Game Scoring](src/screenshots/game-scoring.png)
+
+---
+
+## Implementation Plan
+
+I developed my Whack-A-Mole game in stages, following
+the project's user stories.
+
+1. Created the game layout with nine holes, a title,
+   a Start button, a scoreboard, and a timer.
+2. Implemented random mole selection and difficulty delays.
+3. Added functions to show and hide moles and control gameplay.
+4. Added click event listeners and score tracking.
+5. Implemented the countdown timer.
+6. Customized the appearance with a purple theme.
+7. Tested the game and deployed it using GitHub Pages.
+
+## Challenges and Debugging
+
+One challenge was fixing JavaScript syntax and variable
+errors that prevented the tests from running correctly.
+
+I used the terminal and automated tests to identify
+problems, correct the code, and verify the results.
+
+I also encountered a port conflict when running the
+Parcel development server. I resolved it by stopping
+the process using port 3000.
+
+After debugging, all 32 automated tests passed.
+
+## Design Decisions and Tradeoffs
+
+I chose a purple theme with a dark background instead
+of the original game background.
+
+I kept the original mole and hole images because I
+wanted to focus on completing the game functionality
+and keeping the design simple.
+
+I decided not to add music or extra gameplay features
+so I could prioritize a stable, working game.
+
+## AI Assistance
+
+I used ChatGPT to help understand the project requirements,
+explain JavaScript functions, troubleshoot some errors,
+and guide the GitHub deployment process.
+
+I reviewed the suggested changes, applied them in
+Codespaces, and tested the game to verify that it worked.
+
+## Project Summary
+
+For my final capstone, I developed an interactive
+Whack-A-Mole game using HTML, CSS, and JavaScript.
+The game includes nine holes, randomly appearing
+moles, a scoring system, and a countdown timer.
+I implemented the functionality in stages and used
+automated tests to check my progress. During development,
+I encountered JavaScript errors and server port conflicts,
+which I resolved through debugging and testing.
+I customized the game's appearance with a dark background
+and purple colors to give it a more personal design.
+I also documented my work with Git commits and screenshots.
+After completing the game, I successfully passed all
+32 automated tests and deployed the project using GitHub
+Pages, allowing others to play the game online.
+
+
 # Whack-a-Mole!
 
 A local game development studio has decided to create a new game that's based on Whack-A-Mole. If you've ever been to an arcade, you have probably seen or played Whack-A-Mole. It's a game in which a player uses a mallet to hit toy moles, which appear at random, back into their holes.
 
 The game designers have asked you to come up with a computer version of this game. They have provided some source code, but it still needs to be completed. You are encouraged to come up with an original visual design for this game or even change the theme. The game designers expect you to use the JavaScript, HTML, and CSS skills that you've learned in this program to give the game a unique feel.
+
 
 ![whackamole](https://github.com/gabrielsanchez/erddiagram/blob/main/whackamole.gif?raw=true)
 
