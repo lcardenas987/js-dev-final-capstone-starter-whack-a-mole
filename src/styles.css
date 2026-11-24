@@ -1,22 +1,26 @@
 html {
-  /*background: url('./assets/background.png') no-repeat center center fixed;*/
-  background: url('https://github.com/Thinkful-Ed/js-dev-final-capstone-starter/blob/main/assets/background.png?raw=true') no-repeat center center fixed;
+  background: radial-gradient(
+    circle at center,
+    #24104f 0%,
+    #111936 50%,
+    #050816 100%
+  );
   box-sizing: border-box;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  min-height: 100%;
   background-size: cover;
-  z-index:0;
-  overflow: hidden;
 }
 
 h1 {
   text-align: center;
-  font-size: 90px;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
-  color: white;
-  -webkit-text-stroke: 2px black;
+  font-size: clamp(32px, 5vw, 64px);
+  font-family: Arial, sans-serif;
+  font-weight: 900;
+  color: #9370db;
+  -webkit-text-stroke: 0;
+  text-shadow: none;
+  margin: 20px auto 30px;
 }
+
 
 h2 {
   text-align: center;
@@ -26,9 +30,23 @@ h2 {
 }
 
 #start {
-    text-align: center;
-    font-size: 30px;
+  display: block;
+  margin: 20px auto 30px;
+  padding: 12px 30px;
+  font-size: 26px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: white;
+  background-color: #9370db;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
 }
+
+#start:hover {
+  background-color: #7b55c7;
+}
+
 
 #timer{
     color: white;
