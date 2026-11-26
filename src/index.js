@@ -186,10 +186,17 @@ function clearScore() {
 * Updates the control board with the timer if time > 0
 *
 */
+
 function updateTimer() {
-  // TODO: Write your code here.
-  // hint: this code is provided to you in the instructions.
-  
+  if (time > 0) {
+    time -= 1;
+    timerDisplay.textContent = time;
+  }
+
+  if (time === 0) {
+    clearInterval(timer);
+  }
+
   return time;
 }
 
@@ -199,9 +206,11 @@ function updateTimer() {
 * the updateTimer function get called. This function is already implemented
 *
 */
+
 function startTimer() {
-  // TODO: Write your code here
-  // timer = setInterval(updateTimer, 1000);
+  clearInterval(timer);
+  timer = setInterval(updateTimer, 1000);
+
   return timer;
 }
 

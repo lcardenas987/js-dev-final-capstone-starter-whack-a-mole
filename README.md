@@ -54,20 +54,69 @@ All 32 automated tests passed successfully.
 ![Game Scoring](src/screenshots/game-scoring.png)
 
 ---
+## Initial Development Plan
 
-## Implementation Plan
+### Planned Features
 
-I developed my Whack-A-Mole game in stages, following
-the project's user stories.
+- Nine holes with randomly appearing moles
+- Start Game button
+- 10-second countdown timer
+- Score tracking when moles are clicked
+- Custom purple game design
+- GitHub Pages deployment
 
-1. Created the game layout with nine holes, a title,
-   a Start button, a scoreboard, and a timer.
-2. Implemented random mole selection and difficulty delays.
-3. Added functions to show and hide moles and control gameplay.
-4. Added click event listeners and score tracking.
-5. Implemented the countdown timer.
-6. Customized the appearance with a purple theme.
-7. Tested the game and deployed it using GitHub Pages.
+### Planned Functions
+
+- randomInteger(): Generate random integers.
+- setDelay(): Set difficulty-based mole appearance speeds.
+- chooseHole(): Select a random hole without repeating
+  the previous hole.
+- toggleVisibility(): Show or hide a mole.
+- showAndHide(): Control mole appearance duration.
+- showUp(): Display the next mole.
+- gameOver(): Continue or end the game.
+- startGame(): Initialize gameplay.
+- updateScore(): Increase the score.
+- clearScore(): Reset the score.
+- whack(): Handle mole clicks.
+- setEventListeners(): Register mole click handlers.
+- setDuration(): Set the countdown duration.
+- startTimer(): Start the countdown interval.
+- updateTimer(): Decrease the time every second.
+- stopGame(): Stop the countdown.
+
+### Planned Algorithms
+
+Random Hole Selection:
+Generate a random index and select the corresponding
+hole. If that hole was selected previously, choose
+another hole to avoid consecutive repeats.
+
+Mole Appearance:
+Show a mole, wait for the selected difficulty delay,
+hide the mole, and select another hole while time remains.
+
+Scoring:
+When a mole is clicked, increment the score and update
+the scoreboard.
+
+Countdown:
+Start at 10 seconds, decrease the remaining time
+every 1000 milliseconds, and stop at zero.
+
+### Planned Implementation Steps
+
+1. Create the HTML layout.
+2. Add JavaScript DOM selectors.
+3. Implement randomness and difficulty delays.
+4. Implement mole visibility and gameplay flow.
+5. Implement click events and score tracking.
+6. Implement the countdown timer.
+7. Test the game and debug errors.
+8. Customize the game's appearance.
+9. Capture screenshots and document the project.
+10. Deploy the game using GitHub Pages.
+
 
 ## Challenges and Debugging
 
@@ -82,6 +131,26 @@ Parcel development server. I resolved it by stopping
 the process using port 3000.
 
 After debugging, all 32 automated tests passed.
+
+### Timer Fix After Grader Feedback
+
+During the initial evaluation, the grader reported that
+the timer remained at 10 seconds instead of counting down.
+
+After reviewing my JavaScript, I discovered that
+startTimer() and updateTimer() were incomplete.
+
+I implemented setInterval() to call updateTimer() every
+1000 milliseconds, allowing the displayed countdown to
+decrease from 10 to 0.
+
+I also added clearInterval() to stop the countdown
+when the game finishes.
+
+After correcting the functions, I manually verified
+that the timer counted down correctly.
+
+
 
 ## Design Decisions and Tradeoffs
 
